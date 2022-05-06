@@ -23,19 +23,18 @@ let rotulo1 = document.getElementById("rotulo1");
 let rotulo2 = document.getElementById("rotulo2");
 
 rotulo1.innerHTML = "Ingrese usuario ";
-rotulo2.innerHTML = "Ingrese su contraseña";
+rotulo2.innerHTML = "Ingrese su password";
 
 btnEnviar.addEventListener("click", () => {
-  let contraseña: string = "claveJuan";
+  let password: string = "claveJuan";
   let usuario: string = "Juan";
 
   let usuarioIngresado: string = dato1.value;
-  let contraseñaIngresada: string = dato2.value;
+  let passwordIngresado: string = dato2.value;
 
-  if (usuario == usuarioIngresado && contraseña == contraseñaIngresada); 
-  {
+  if (usuario === usuarioIngresado && password === passwordIngresado) {
     console.log("¡Usted ha ingresado correctamente!");
   } else {
-    console.log("Usuario o contraseña incorrectos");
+    console.log("Usuario o password incorrectos");
   }
 });
